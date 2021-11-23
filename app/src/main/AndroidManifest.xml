@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LatihanBackgroundProcessdanNetworking3"
         android:fullBackupContent="@xml/backup_descriptor">
+        <service
+            android:name=".DownloadService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
         <receiver
             android:name=".SmsReceiver"
             android:enabled="true"
